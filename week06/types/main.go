@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"reflect"
+)
+
 func main() {
 	// fmt.Println(math.Round(2.21))
 	// fmt.Println(math.Ceil(2.21))
@@ -43,4 +48,12 @@ func main() {
 	// fmt.Println(s, reflect.TypeOf(s))
 	// fmt.Println(i, reflect.TypeOf(i))
 	// fmt.Println(i16, reflect.TypeOf(i16))
+
+	var f64 float64
+	// total_price := 1000
+	// totalprice := 1000
+	totalPrice := 1000
+
+	fmt.Println(totalPrice)
+	fmt.Println(totalPrice, reflect.TypeOf(f64))
 }
