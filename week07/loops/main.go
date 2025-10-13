@@ -1,8 +1,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"strings"
+	"os"
 )
 
 func main() {
@@ -18,9 +19,13 @@ func main() {
 	// var day int = now.Day()
 	// fmt.Println(month, day)
 
-	// var univ string = "Go$ Inha$"
-	changer := strings.NewReplacer("$", "!")
-	// changed := changer.Replace(univ)
-	changed := changer.Replace("Go$ Inha$")
-	fmt.Println(changed)
+	// // var univ string = "Go$ Inha$"
+	// changer := strings.NewReplacer("$", "!")
+	// // changed := changer.Replace(univ)
+	// changed := changer.Replace("Go$ Inha$")
+	// fmt.Println(changed)
+
+	r := bufio.NewReader(os.Stdin)
+	i, _ := r.ReadString('\n') //ignore error
+	fmt.Println(i)
 }
