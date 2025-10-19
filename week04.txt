@@ -1,9 +1,10 @@
 리눅스 명령어
-history | less
+history | less : 히스토리를 페이지 단위로 확인
+스페이스(다음페이지), ↑↓(위 아래 이동), q(종료)
 
 
 깃 명령어
-git commit --amend -m "수정할커밋메세지"
-git reset --hard HEAD~최근커밋부터삭제할갯수
-git fetch
-git pull
+git commit --amend -m "수정할커밋메세지" : 마지막 커밋 메시지 수정하기(push하지 않았다면 사용 가능)
+git reset --hard HEAD~최근커밋부터삭제할갯수 : 최근 커밋을 강제로 삭제하고 해당 시점으로 되돌리ㄱ
+git fetch : 원격 저장소의 최신 상태를 가져오기만 하고, 로컬 브랜치에는 적용하지 않음
+git pull : 원격 저장소의 최신 상태를 가져오고 내 로컬 브랜치에 병합까지 실행

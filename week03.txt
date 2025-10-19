@@ -1,15 +1,24 @@
 리눅스 명령어
-echo "출력할문자열" >> 파일명
-rm 파일명
-history
+- echo "출력할문자열" >> 파일명 : 파일에 출력할문자열을 추가
+- rm 파일명 : 파일 삭제
+- history : 지금까지 실행한 명령어 목록 출력
 
 
 깃 명령어
-git branch -M main
-git remote add origin https://github.com/아이디/원격리포지토리이름.git
-git push -u origin main
-git push
-git remote -v
-git remote remove origin
-git clone 원격리포지토리주소
-git clone 원격리포지토리주소 .
+- git branch -M main : 현재 브랜치 이름을 main으로 변경
+- git remote add origin https://github.com/아이디/원격리포지토리이름.git : 원격 저장소에 origin이라는 이름으로 추가
+- git push -u origin main : 로컬 브랜치(main)를 원격 main 브랜치에 push
+- git push : 위에 명령어를 실행 후 부터는 git push만 해도 자동으로 push 가능
+- git remote -v : 등록된 원격 저장소 목록 확인
+- git remote remove origin : 등록된 원격 저장소 제
+- git clone 원격리포지토리주소 : 원격 저장소를 내 로컬 PC로 복제
+- git clone 원격리포지토리주소 . : 새 폴더를 만들지 않고 현재 폴더에 바로 복제
+
+
+clone 하는 법
+0. git config --list로 사용자 확인
+1. 원하는 github 저장소 주소 복사 후 clone
+2. 원격 저장소 변경하기
+2-1. git remote -v 로 기존 원격 주소 확인하기
+2-2. git remote remove origin 으로 기존 원격 삭제하기
+2-3. git remote add origin https://github.com/아이디/원격리포지토리이름.git 으로 새 원격 추가하기
