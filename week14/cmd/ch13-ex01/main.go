@@ -14,7 +14,7 @@ func say(msg string) {
 
 func main() {
 	start := time.Now()
-	say("메인") // 메인 고루틴에서 실행
-	say("메인") // 메인 고루틴에서 실행
+	go say("메인") // 새 고루틴에서 실행
+	say("메인")    // 메인 고루틴에서 실행
 	fmt.Println("전체 실행 시간 : ", time.Since(start))
 }
